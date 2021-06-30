@@ -9,7 +9,7 @@
         "esModuleInterop": true,
         "lib": [
             "ESNext",
-            "esnext.asynciterable"
+            "ESNext.asynciterable"
         ],
         "module": "commonjs",
         "moduleResolution": "node",

@@ -975,6 +975,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/parser@npm:^4.28.1":
+  version: 4.28.1
+  resolution: "@typescript-eslint/parser@npm:4.28.1"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.28.1
+    "@typescript-eslint/types": 4.28.1
+    "@typescript-eslint/typescript-estree": 4.28.1
+    debug: ^4.3.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: ab7c7fef7477cd1506041cba0ba36ad003c74214f8a96836a742309cc471b12979b622edf98915b0fad45a257466b291ca9924ae5c7b38316a5fd23d1d634070
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/scope-manager@npm:4.28.1":
   version: 4.28.1
   resolution: "@typescript-eslint/scope-manager@npm:4.28.1"
@@ -2714,6 +2731,7 @@ __metadata:
     "@apollo/federation": ^0.25.2
     "@apollo/gateway": ^0.31.0
     "@rimac-automobili/eslint-config": ^16.0.5
+    "@typescript-eslint/parser": ^4.28.1
     apollo-server: ^2.25.2
     eslint: ^7.29.0
     graphql: ^15.5.1
@@ -5669,6 +5687,12 @@ typescript@^4.3.4:
   checksum: 7d8ae8e2d7b82480d7d337f3e53c9a89ffdc7ebb1c31f212da3df6349f2fd1e6a4361f5fb27369ecab33fa37aa85edc53aec6eb7c9a7c3207a9e0944e8c48802
   languageName: node
   linkType: hard
+
+"user@workspace:workspaces/user":
+  version: 0.0.0-use.local
+  resolution: "user@workspace:workspaces/user"
+  languageName: unknown
+  linkType: soft
 
 "util-deprecate@npm:~1.0.1":
   version: 1.0.2

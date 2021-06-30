@@ -6,17 +6,15 @@
     "email": "sw.m2m@rimac-automobili.com"
   },
   "workspaces": [
-    "workspaces/*"
+    "workspaces/user"
   ],
   "engines": {
     "node": ">=14.17"
   },
   "scripts": {
-    "lint": "yarn workspaces foreach run lint",
+    "lint": "yarn workspaces foreach -pi run lint",
     "user": "yarn workspace user",
-    "event": "yarn workspace event",
-    "gateway": "yarn workspace gateway",
-    "start-services": "yarn workspaces foreach -pi --exclude rehga --exclude shared-utils run start"
+    "start-services": "yarn workspaces foreach -pi --exclude common run start"
   },
   "dependencies": {
     "@apollo/federation": "^0.25.2",
@@ -29,6 +27,7 @@
   },
   "devDependencies": {
     "@rimac-automobili/eslint-config": "^16.0.5",
+    "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
     "ts-node-dev": "^1.1.7",
     "typescript": "^4.3.4"

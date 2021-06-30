@@ -1,0 +1,7 @@
+{
+  "name": "user",
+  "scripts": {
+    "lint": "eslint src/**/*",
+    "start": "ts-node-dev --respawn src/server.ts"
+  }
+}
