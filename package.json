@@ -1,8 +1,9 @@
 {
   "private": true,
-  "name": "example-apollo-federation",
+  "name": "apollo-federation-type-graphql",
   "author": {
-    "name": "Hrvoje Pavlinovic"
+    "name": "Hrvoje Pavlinovic",
+    "url": "https://linktr.ee/hp10"
   },
   "workspaces": [
     "workspaces/*"
