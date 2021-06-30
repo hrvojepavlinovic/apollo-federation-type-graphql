@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server'
 
-import { buildFederatedSchema } from '../../common/build-federated-schema'
+import { buildFederatedSchema } from 'common/build-federated-schema'
 
 import { UserResolver } from './resolver'
 import { User } from './user'

@@ -845,6 +845,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"apollo-federation-type-graphql@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "apollo-federation-type-graphql@workspace:."
+  dependencies:
+    "@apollo/federation": ^0.25.1
+    "@apollo/gateway": ^0.28.3
+    "@typescript-eslint/eslint-plugin": ^4.28.1
+    "@typescript-eslint/parser": ^4.28.1
+    apollo-server: ^2.25.1
+    eslint: ^7.29.0
+    eslint-config-standard: ^16.0.3
+    eslint-plugin-import: ^2.23.4
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-promise: ^5.1.0
+    graphql: ^15.5.1
+    reflect-metadata: ^0.1.13
+    ts-node: ^10.0.0
+    type-graphql: ^1.1.1
+    typedi: ^0.10.0
+    typescript: ^4.3.4
+  languageName: unknown
+  linkType: soft
+
 "apollo-graphql@npm:^0.9.0, apollo-graphql@npm:^0.9.3":
   version: 0.9.3
   resolution: "apollo-graphql@npm:0.9.3"
@@ -1932,29 +1955,6 @@ __metadata:
   checksum: fa1a206c4e4e8e427542f7fdfa10bd073a4ddf2510fb22e2f9a33b9aa7a0d5669bffba9b889e22d8c1c976af51a92dab274845e58d626ddb2d3563ed4d5d50dc
   languageName: node
   linkType: hard
-
-"example-apollo-federation@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "example-apollo-federation@workspace:."
-  dependencies:
-    "@apollo/federation": ^0.25.1
-    "@apollo/gateway": ^0.28.3
-    "@typescript-eslint/eslint-plugin": ^4.28.1
-    "@typescript-eslint/parser": ^4.28.1
-    apollo-server: ^2.25.1
-    eslint: ^7.29.0
-    eslint-config-standard: ^16.0.3
-    eslint-plugin-import: ^2.23.4
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-promise: ^5.1.0
-    graphql: ^15.5.1
-    reflect-metadata: ^0.1.13
-    ts-node: ^10.0.0
-    type-graphql: ^1.1.1
-    typedi: ^0.10.0
-    typescript: ^4.3.4
-  languageName: unknown
-  linkType: soft
 
 "express@npm:^4.0.0, express@npm:^4.17.1":
   version: 4.17.1

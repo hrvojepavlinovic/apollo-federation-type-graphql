@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import { ApolloGateway } from '@apollo/gateway'
 import { ApolloServer } from 'apollo-server'
 
-import { server as userServer } from '../../user/src/server'
+import { server as userServer } from 'user/src/server'
 
 const bootstrap = async () => {
   const gateway = new ApolloGateway({
