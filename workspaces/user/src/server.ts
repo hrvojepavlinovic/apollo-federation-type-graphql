@@ -1,32 +1,26 @@
-import {
-    ApolloServer,
-    gql,
-} from 'apollo-server'
+import { ApolloServer } from 'apollo-server'
 
-const typeDefs = gql`
-  type Query {
-    user: User
-  }
+import { buildFederatedSchema } from '../../common/build-federated-schema'
 
-  type User {
-    id: ID!
-    username: String
-  }
-`
+import { UserResolver } from './resolver'
+import { User } from './user'
+import { resolveUserReference } from './user-reference'
 
-const resolvers = {
-    Query: {
-        user() {
-            return { id: 1, username: 'Harvey' }
+export const server = async (port: number): Promise<string> => {
+    const schema = await buildFederatedSchema(
+        {
+            orphanedTypes: [User],
+            resolvers: [UserResolver],
         },
-    },
+        {
+            User: { __resolveReference: resolveUserReference },
+        },
+    )
+
+    const apolloServer = new ApolloServer({ schema })
+
+    const { url } = await apolloServer.listen({ port })
+    console.log(`User service ready at ${url}`)
+
+    return url
 }
-
-const server = new ApolloServer({
-    resolvers,
-    typeDefs,
-})
-
-void server.listen(4001).then(({ url }) => {
-    console.log(`🚀 User service ready at ${url}`)
-})

@@ -1,5 +1,5 @@
 {
-  "name": "user",
+  "name": "gateway",
   "scripts": {
     "lint": "eslint src/**/*",
     "start": "ts-node src/server.ts"
