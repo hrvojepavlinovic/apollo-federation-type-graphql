@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "example-apollo-federation",
+  "author": {
+    "name": "Rimac Automobili d.o.o",
+    "email": "sw.m2m@rimac-automobili.com"
+  },
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "engines": {
+    "node": ">=14.17"
+  },
+  "scripts": {
+    "lint": "yarn workspaces foreach run lint",
+    "user": "yarn workspace user",
+    "event": "yarn workspace event",
+    "gateway": "yarn workspace gateway",
+    "start-services": "yarn workspaces foreach -pi --exclude rehga --exclude shared-utils run start"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.25.2",
+    "@apollo/gateway": "^0.31.0",
+    "apollo-server": "^2.25.2",
+    "graphql": "^15.5.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@rimac-automobili/eslint-config": "^16.0.5",
+    "eslint": "^7.29.0",
+    "ts-node-dev": "^1.1.7",
+    "typescript": "^4.3.4"
+  }
+}
