@@ -2,8 +2,7 @@
   "private": true,
   "name": "example-apollo-federation",
   "author": {
-    "name": "Rimac Automobili d.o.o",
-    "email": "sw.m2m@rimac-automobili.com"
+    "name": "Hrvoje Pavlinovic"
   },
   "workspaces": [
     "workspaces/*"
@@ -26,9 +25,13 @@
     "typedi": "^0.10.0"
   },
   "devDependencies": {
-    "@rimac-automobili/eslint-config": "^16.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   }
