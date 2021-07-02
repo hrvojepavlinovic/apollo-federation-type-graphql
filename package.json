@@ -2,8 +2,7 @@
   "private": true,
   "name": "apollo-federation-type-graphql",
   "author": {
-    "name": "Hrvoje Pavlinovic",
-    "url": "https://linktr.ee/hp10"
+    "name": "Hrvoje Pavlinovic"
   },
   "workspaces": [
     "workspaces/*"
@@ -13,8 +12,10 @@
   },
   "scripts": {
     "lint": "yarn workspaces foreach -pi run lint",
+    "event": "yarn workspace event",
+    "gateway": "yarn workspace gateway",
     "user": "yarn workspace user",
-    "gateway": "yarn workspace gateway"
+    "start-services": "yarn workspaces foreach -pi --exclude gateway run start"
   },
   "dependencies": {
     "@apollo/federation": "^0.25.1",

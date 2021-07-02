@@ -1,7 +1,7 @@
 {
   "name": "gateway",
   "scripts": {
-    "lint": "eslint src/**/*",
+    "lint": "eslint src/**/*.ts",
     "start": "ts-node src/server.ts"
   }
 }

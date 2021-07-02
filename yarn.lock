@@ -1949,6 +1949,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"event@workspace:workspaces/event":
+  version: 0.0.0-use.local
+  resolution: "event@workspace:workspaces/event"
+  languageName: unknown
+  linkType: soft
+
 "eventemitter3@npm:^3.1.0":
   version: 3.1.2
   resolution: "eventemitter3@npm:3.1.2"

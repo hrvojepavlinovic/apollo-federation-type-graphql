@@ -1,5 +1,5 @@
 {
-  "name": "user",
+  "name": "event",
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "start": "ts-node src/server"

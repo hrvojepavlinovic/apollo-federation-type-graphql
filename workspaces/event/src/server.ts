@@ -1,20 +1,21 @@
 import 'reflect-metadata'
 import { ApolloServer } from 'apollo-server'
 
+import { EventResolver } from './resolver'
+import { Event } from './event'
 import { buildFederatedSchema } from 'common/build-federated-schema'
-
-import { UserResolver } from './resolver'
-import { User } from './user'
-import { resolveUserReference } from './user-reference'
+import { resolveEventReference } from './event-reference'
+import { UserEventsResolver } from './user/resolver'
+import { User } from './user/user'
 
 export const server = async (options: { port: number }): Promise<string> => {
   const schema = await buildFederatedSchema(
     {
-      orphanedTypes: [User],
-      resolvers: [UserResolver]
+      resolvers: [EventResolver, UserEventsResolver],
+      orphanedTypes: [Event, User]
     },
     {
-      User: { __resolveReference: resolveUserReference }
+      Event: { __resolveReference: resolveEventReference }
     }
   )
 
@@ -26,4 +27,4 @@ export const server = async (options: { port: number }): Promise<string> => {
   return url
 }
 
-server({ port: 4001 }).catch(console.error)
+server({ port: 4002 }).catch(console.error)

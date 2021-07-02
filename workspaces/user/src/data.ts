@@ -2,15 +2,15 @@ import { User } from './user'
 
 export const users: User[] = [
   {
-    birthDate: '1815-12-10',
+    birthDate: '1970-01-01',
     id: '1',
-    name: 'Ada Lovelace',
-    username: '@ada'
+    name: 'Harvey Barley',
+    username: '@harbar'
   },
   {
-    birthDate: '1912-06-23',
+    birthDate: '650-01-01',
     id: '2',
-    name: 'Alan Turing',
-    username: '@complete'
+    name: 'Halvorn',
+    username: '@hal'
   }
 ]

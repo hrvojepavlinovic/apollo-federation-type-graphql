@@ -2,12 +2,11 @@ import 'reflect-metadata'
 import { ApolloGateway } from '@apollo/gateway'
 import { ApolloServer } from 'apollo-server'
 
-import { server as userServer } from 'user/src/server'
-
-const bootstrap = async () => {
+const main = async () => {
   const gateway = new ApolloGateway({
     serviceList: [
-      { name: 'users', url: await userServer(4001) }
+      { name: 'users', url: 'http://localhost:4001' },
+      { name: 'events', url: 'http://localhost:4002' }
     ]
   })
 
@@ -22,4 +21,4 @@ const bootstrap = async () => {
   })
 }
 
-bootstrap().catch(console.error)
+main().catch(console.error)
